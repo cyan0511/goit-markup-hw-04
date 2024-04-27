@@ -42,6 +42,7 @@ p {
 
 .header > .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .nav {
@@ -58,9 +59,7 @@ p {
 .link {
   text-decoration: none;
   color: var(--item-color);
-  padding: 24px 0 24px;
   display: block;
-  margin-bottom: 16px;
 }
 
 .contact-link {
@@ -103,10 +102,6 @@ p {
   margin-right: 76px;
 }
 
-.logo {
-  color: #4d5ae5;
-}
-
 .logo > .studio {
   color: var(--item-color);
 }
@@ -137,9 +132,16 @@ p {
   background-color: #2e2f42;
   justify-content: center;
   padding: 188px 0 188px;
-  background-image: url(../images/people-office.jpg),
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
   display: block;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .service-title {
